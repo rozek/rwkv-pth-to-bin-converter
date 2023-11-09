@@ -6,7 +6,7 @@ Docker file to convert RWKV models from .pth to (optionally quantized) .bin form
 
 [rwkv.cpp](https://github.com/saharNooby/rwkv.cpp) is a port of [BlinkDL/RWKV-LM](https://github.com/BlinkDL/RWKV-LM) which offers a C library that is the base for bindings for other languages, such as [llama-node](https://github.com/Atome-FE/llama-node) which offers a JavaScript API for Node.js.
 
-rwkv.cpp needs RWKV models in the .bin format while [Hugging Face](https://huggingface.co/BlinkDL) normally offers them in .pth format only. It therefore contains a Python script which performs this conversion - and another one, that can be used to quantise the model in order to reduce required resources.
+rwkv.cpp needs RWKV models in the .bin format while [Hugging Face](https://huggingface.co/BlinkDL) normally offers them in .pth format only. It therefore contains a Python script which performs this conversion - and another one, that can be used to quantise the model in order to reduce the resources required for inferencing.
 
 If you do not want to install and maintain Python on your machine (which can be tricky as many AI-related Python scripts require very specific versions of Python and/or Python libraries - it's not always a good idea to just install the latestes ones...), you may instead run the conversion within a [Docker](https://www.docker.com/) container.
 
