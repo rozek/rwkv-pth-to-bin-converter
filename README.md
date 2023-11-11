@@ -12,6 +12,8 @@ If you do not want to install and maintain Python on your machine (which can be 
 
 This is where this repository comes in: it provides a Dockerfile which can be used to create an image and run a container that downloads a given RWKV model and converts and quantizes it to be used with rwkv.cpp
 
+**Warning** llama-node is currently not able to run RWKV models (as mentioned in llama-node issue [121](https://github.com/Atome-FE/llama-node/issues/121) and rwkv.cpp issue [144](https://github.com/saharNooby/rwkv.cpp/issues/144)) - this repository therefore exists for documentation purposes only (until llama-node has been fixed)
+
 > **Nota bene:** depending on your host operatins system, you may have to stop the command sequence from the Dockerfile after running `cmake` for the first time and modify its output in order for the actual compilation to run without errors.
 >
 > Additionally, you may want to edit the Dockerfile and change the model and/or quantizations it calculates
